@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Drawing</title>
+
+    <style>
+
+
+        #big_window {
+            position: relative;
+            width: 700px;
+            height: 500px;
+            background-color: aquamarine;
+            overflow: hidden;
+        }
+
+        #building {
+            left: 100px;
+            top: 100px;
+            position: absolute;
+            width: 500px;
+            height: 1000px;
+            background: linear-gradient(to right, white, grey);
+            border: 1px solid black;
+        }
+
+        .window {
+            width: 50px;
+            height: 60px;
+            background-color: grey;
+            margin: 10px;
+            border: 3px solid brown;
+            box-shadow: inset 4px 4px 8px black;
+        }
+
+        #window1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        #window2 {
+            position: absolute;
+            top: 50px;
+            left: 150px;
+        }
+
+        #window3 {
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            background-color: yellow;
+        }
+
+        #sun {
+            background-color: yellow;
+            position: absolute;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="big_window">
+
+    <div id="sun"></div>
+
+    <div id="building">
+
+        <div id="window1" class="window"></div>
+        <div id="window2" class="window"></div>
+        <div id="window3" class="window"></div>
+
+    </div>
+
+</div>
+
+    
+</body>
+</html>
